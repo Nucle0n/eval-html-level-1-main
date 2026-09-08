@@ -51,6 +51,9 @@ body {
     height: 128px;
     border: 6px solid var(--blanc);
     border-radius: 50%;
+
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+
     grid-area: img;
 }
 
