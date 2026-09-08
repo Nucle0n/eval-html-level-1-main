@@ -1,0 +1,95 @@
+:root {
+    --vert1: #4CAF50;
+    --vert2: #8BC34A;
+    --gris: #F0F2F5;
+    --noir: #333;
+    --blanc: #FFF;
+
+    --bd-radius: 15px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--gris);
+    color: var(--blanc);
+    font-size: 20px;
+}
+
+.main {
+    justify-self: center;
+    padding: 15px;
+    width: 780px;
+}
+
+.card, .main__p {
+    border-radius: var(--bd-radius);
+    padding: 20px;
+}
+
+.card {
+    height: 250px ;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    background-color: #4CAF50;
+    background-image: linear-gradient(to right, var(--vert1), var(--vert2));
+    grid-template-areas: 
+    "q q"
+    "ad img";
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card__q {
+    quotes: none;
+    font-style: italic;
+    margin-top: 20px;
+    grid-area: q;
+}
+
+.card__img {
+    width: 128px;
+    height: 128px;
+    border: 6px solid var(--blanc);
+    border-radius: 90px;
+    grid-area: img;
+}
+
+.card__adress {
+    grid: ad;
+}
+
+.card h1 {
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.card__p {
+    font-size: 24px;
+    margin: -5px 0;
+}
+
+.age {
+    margin: 15px 0;
+}
+
+.main__p {
+    background-color: var(--blanc);
+    color: var(--noir);
+    padding: 20px 12px;
+    line-height: 1.5;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    display: block;
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+/* Je ne sais pas pourquoi il fout tout en italic donc je rajoute ce qui suit temporairement */
+.card a, .age, .card__p {
+    font-style: normal; 
+}
+
+
