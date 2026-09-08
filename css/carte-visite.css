@@ -50,11 +50,12 @@ body {
     width: 128px;
     height: 128px;
     border: 6px solid var(--blanc);
-    border-radius: 90px;
+    border-radius: 50%;
     grid-area: img;
 }
 
 .card__adress {
+    font-style: normal;
     grid: ad;
 }
 
@@ -86,10 +87,4 @@ body {
     color: var(--blanc);
     text-decoration: none;
 }
-
-/* Je ne sais pas pourquoi il fout tout en italic donc je rajoute ce qui suit temporairement */
-.card a, .age, .card__p {
-    font-style: normal; 
-}
-
 
